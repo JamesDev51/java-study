@@ -21,4 +21,9 @@ public class Porter implements Truck, WithStuckInterface{
         Truck.super.withStuck();
         WithStuckInterface.super.withStuck();
     }
+
+    @Override
+    public String getModel() {
+        return "model";
+    }
 }
