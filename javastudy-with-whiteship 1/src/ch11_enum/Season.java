@@ -31,5 +31,6 @@ enum Season {
         this.avgTemperature=avgTemperature;
     }
 
+
     abstract void rangeTemperature(int range);
 }
