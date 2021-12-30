@@ -2,6 +2,8 @@
 자바 스터디 레포지토리
 
 # javastudy-with-whiteship 1
+[개발자 백기선님과 함께하는 자바 스터디 15주](https://github.com/whiteship/live-study/blob/442318f85a47e57d7bfb1d4df380e097d3dc51ec/README.md)
+
 1. [1주차 : JVM은 무엇이며 자바 코드는 어떻게 실행하는 것인가.](https://james-dev.notion.site/1-JVM-c5086e233a784273952eff35765757ae)
 2. [2주차 : 자바 데이터 타입, 변수 그리고 배열](https://james-dev.notion.site/2-6a365974ab5c45358681018035198f31)
 3. [3주차 : 연산자](https://james-dev.notion.site/3-362b8709db55450b9c0fcb52c7fbf136)
