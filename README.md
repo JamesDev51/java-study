@@ -1,7 +1,7 @@
 # javastudy
 자바 스터디 레포지토리
 
-# javastudy-with-whiteship 1
+## javastudy-with-whiteship 1
 [개발자 백기선님과 함께하는 자바 스터디 15주](https://github.com/whiteship/live-study/blob/442318f85a47e57d7bfb1d4df380e097d3dc51ec/README.md)
 
 1. [1주차 : JVM은 무엇이며 자바 코드는 어떻게 실행하는 것인가.](https://james-dev.notion.site/1-JVM-c5086e233a784273952eff35765757ae)
