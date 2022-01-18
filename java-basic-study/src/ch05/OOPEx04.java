@@ -18,7 +18,7 @@ class 임꺽정{
 
 public class OOPEx04 {
     public static void main(String[] args) {
-        ch05.srpdip.임꺽정 e = new ch05.srpdip.임꺽정();
+        임꺽정 e = new 임꺽정();
         e.달리기();
         e.달리기(1);
         e.달리기(5.0);
