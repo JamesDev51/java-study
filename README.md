@@ -21,7 +21,7 @@
 14. [14주차 : 제네릭](https://james-dev.notion.site/14-9e84c7816aea42ef8eeb4654bad041b2)
 15. [15주차 : 람다식](https://james-dev.notion.site/15-684120708607493584735586e5869936)
 
-##  메타코딩 자바 강의
+##  java-basic-study
 [메타코딩 자바 강의](https://www.easyupclass.com/course/274/about)
 
 1. [Chapter 1 자바 JVM 이해하기](https://james-dev.notion.site/Chapter-1-JVM-4aef40e731f84c10b588604d02c0f151)
