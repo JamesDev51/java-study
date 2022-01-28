@@ -1,3 +1,4 @@
+
 # javastudy
 자바 스터디 레포지토리
 
@@ -19,3 +20,14 @@
 13. [13주차 : I/O](https://james-dev.notion.site/13-I-O-5884f2c51d224431b78dca382730d8e8)
 14. [14주차 : 제네릭](https://james-dev.notion.site/14-9e84c7816aea42ef8eeb4654bad041b2)
 15. [15주차 : 람다식](https://james-dev.notion.site/15-684120708607493584735586e5869936)
+
+##  메타코딩 자바 강의
+[메타코딩 자바 강의](https://www.easyupclass.com/course/274/about)
+
+1. [Chapter 1 자바 JVM 이해하기](https://james-dev.notion.site/Chapter-1-JVM-4aef40e731f84c10b588604d02c0f151)
+2. [Chapter 2 자바 메모리 구조](https://james-dev.notion.site/Chapter-2-c3750e31c25c427287a10ba1ecef2c56)
+3. [Chapter 3 연산자](https://james-dev.notion.site/Chapter-3-55bf7ae920e94079a475b7ba3d0d0050)
+4. [Chapter 4 객체지향 프로그래밍 문법](https://james-dev.notion.site/Chapter-4-9b344d840240440eb52f4ac858f4a563)
+5. [Chapter 5 객체지향 프로그래밍 이해](https://james-dev.notion.site/Chapter-5-3cae4183110c47b28ccfda25c23ce526)
+6. [Chapter 6 배열/조건문/반복문/컬렉션/제네릭](https://james-dev.notion.site/Chapter-6-fbf9a1a3897448479b9f7c3dfe635ea3)
+7. [Chapter 7 스레드와 소켓통신](https://james-dev.notion.site/Chapter-7-41b95c9da34d410eae12bd8fa66c9809)
