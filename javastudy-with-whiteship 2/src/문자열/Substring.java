@@ -13,7 +13,7 @@ public class Substring {
             //마지막 7글자 자르기
             System.out.println(s.substring(s.length()-7)); //minseok
 
-            //특정 문자 이후의 문자열 제거
+            //특정 문자 이후의 문자열
             System.out.println(s.substring(s.lastIndexOf(",")+1)); // My name is minseok
       }
 }
