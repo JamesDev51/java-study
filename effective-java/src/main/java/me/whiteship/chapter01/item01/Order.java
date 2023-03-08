@@ -12,6 +12,19 @@ public class Order {
 
     private OrderStatus orderStatus;
 
+    // //일반 주문
+    // public Order(Product product, boolean prime) {
+    //     this.product = product;
+    //     this.prime = prime;
+    // }
+    //
+    // //급한 주문
+    // public Order(boolean prime,Product product) {
+    //     this.product = product;
+    //     this.prime = prime;
+    // }
+
+
     public static Order primeOrder(Product product) {
         Order order = new Order();
         order.prime = true;
