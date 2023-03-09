@@ -15,6 +15,10 @@ public abstract class Pizza {
 
     abstract static class Builder<T extends Builder<T>> {
         EnumSet<Topping> toppings = EnumSet.noneOf(Topping.class);
+
+        //T 타입을 반환하기 위해 self()를 추상 메서드로 두고 서브 클래스에서 구현하도록 함
+        // 그렇지 않으면 Pizza 의 Builder 를 상속받은 서브 클래스 builder 들은 자신만의 고유한 메서드를 사용
+        // 하기 위해 타입 캐스팅을 해야함
         public T addTopping(Topping topping) {
             toppings.add(Objects.requireNonNull(topping));
             return self();
@@ -23,7 +27,7 @@ public abstract class Pizza {
         abstract Pizza build();
 
         // 하위 클래스는 이 메서드를 재정의(overriding)하여
-        // "this"를 반환하도록 해야 한다.
+        // 하위 클래스의 "this"를 반환하도록 해야 한다.
         protected abstract T self();
     }
     

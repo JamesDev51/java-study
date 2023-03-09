@@ -2,8 +2,12 @@ package me.whiteship.chapter01.item03.staticfactory;
 
 // 코드 3-2 정적 팩터리 방식의 싱글턴 (24쪽)
 public class Elvis implements Singer {
+
+    //싱글턴 인스턴스에 대해 private 으로 접근 제한
     private static final Elvis INSTANCE = new Elvis();
     private Elvis() { }
+
+    //정적 메서드를 사용해서 싱글턴 인스턴스에 접근 가능
     public static Elvis getInstance() { return INSTANCE; }
 
     public void leaveTheBuilding() {

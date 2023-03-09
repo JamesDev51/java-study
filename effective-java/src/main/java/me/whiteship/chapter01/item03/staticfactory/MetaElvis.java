@@ -25,6 +25,8 @@ public class MetaElvis<T> {
         MetaElvis<Integer> elvis2 = MetaElvis.getInstance();
         System.out.println(elvis1);
         System.out.println(elvis2);
+        System.out.println(elvis1.equals(elvis2)); //true
+        // System.out.println(elvis1 == elvis2); //false
         elvis1.say("hello");
         elvis2.say(100);
     }

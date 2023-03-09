@@ -17,8 +17,9 @@ public class Person {
         this.kids = new ArrayList<>();
     }
 
+
+
     public static void main(String[] args) {
         Person person = new Person("keesun", 1982);
-
     }
 }

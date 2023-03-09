@@ -15,3 +15,4 @@ public class VarargsSamples {
         samples.printNumbers(1, 20, 20, 39, 59);
     }
 }
+

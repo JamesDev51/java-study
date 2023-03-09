@@ -8,6 +8,7 @@ class ConcertTest {
 
     @Test
     void perform() {
+        //가짜 mock 을 두고 test 가능
         Concert concert = new Concert(new MockElvis());
         concert.perform();
 
