@@ -8,6 +8,8 @@ public class SpellChecker {
 
     private Dictionary dictionary;
 
+
+    //팩터리 인터페이스를 주입받는다. -> 새로운 팩터리를 주입받아도 그대로 동작
     public SpellChecker(DictionaryFactory dictionaryFactory) {
         this.dictionary = dictionaryFactory.getDictionary();
     }

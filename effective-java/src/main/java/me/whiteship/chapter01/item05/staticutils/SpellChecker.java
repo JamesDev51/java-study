@@ -7,6 +7,7 @@ import java.util.List;
 
 public class SpellChecker {
 
+    //사전은 바뀔 수 있음
     private static final Dictionary dictionary = new DefaultDictionary();
 
     private SpellChecker() {}
