@@ -3,7 +3,8 @@ package me.whiteship.chapter01.item06;
 public class Sum {
     private static long sum() {
         // TODO Long을 long으로 변경하여 실행해 보세요.
-        Long sum = 0L;
+        // Long sum = 0L;
+        long sum = 0L;
         for (long i = 0; i <= Integer.MAX_VALUE; i++)
             sum += i;
         return sum;

@@ -10,9 +10,9 @@ public class Strings {
 
         String hello3 = "hello";
 
-        System.out.println(hello == hello2);
-        System.out.println(hello.equals(hello2));
-        System.out.println(hello == hello3);
-        System.out.println(hello.equals(hello3));
+        System.out.println(hello == hello2); //false
+        System.out.println(hello.equals(hello2)); //true
+        System.out.println(hello == hello3); //true
+        System.out.println(hello.equals(hello3)); //true
     }
 }
