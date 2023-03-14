@@ -8,7 +8,9 @@ public class PhantomReferenceExample {
 
     public static void main(String[] args) throws InterruptedException {
         BigObject strong = new BigObject();
-        ReferenceQueue<BigObject> rq = new ReferenceQueue<>();
+        
+        //팬텀 레퍼런스는 gc가 일어나면 원래 오브젝트는 정리하고 팬텀 레퍼런스를 rq에 넣어줌, 따라서 ReferenceQueue 필요
+        ReferenceQueue<BigObject> rq = new ReferenceQueue<>(); 
 
         BigObjectReference<BigObject> phantom = new BigObjectReference<>(strong, rq);
         strong = null;

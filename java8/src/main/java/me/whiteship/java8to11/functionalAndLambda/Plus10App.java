@@ -29,7 +29,7 @@ public class Plus10App {
 		Predicate<String> startsWithMinseok = (s) -> s.startsWith("minseok");
 		Predicate<Integer> isEven = (i) -> i%2==0;
 
-		
+
 		UnaryOperator<Integer> unaryplus10 = (i)->i+10;
 
 	}
