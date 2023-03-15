@@ -10,6 +10,8 @@ public class BigObject {
         this.resource = resource;
     }
 
+    //1. static으로 만들어야 함
+    //BigObject에 대한 reference가 있으면 안됨 ->
     public static class ResourceCleaner implements Runnable {
 
         private List<Object> resourceToClean;

@@ -11,6 +11,8 @@ public class CleanerIsNotGood {
 
         List<Object> resourceToCleanUp = new ArrayList<>();
         BigObject bigObject = new BigObject(resourceToCleanUp);
+
+        //cleaner 에 static nested runnable class 등록
         cleaner.register(bigObject, new BigObject.ResourceCleaner(resourceToCleanUp));
 
         bigObject = null;

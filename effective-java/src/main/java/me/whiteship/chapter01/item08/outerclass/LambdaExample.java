@@ -6,6 +6,7 @@ public class LambdaExample {
 
     private int value = 10;
 
+    //Runnable 에서 바깥 객체를 참조하면 LambdaExample 객체가 참조가 생기게 됨
     private Runnable instanceLambda = () -> {
         System.out.println(value);
     };

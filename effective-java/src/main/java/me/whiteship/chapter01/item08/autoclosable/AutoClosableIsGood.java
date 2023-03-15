@@ -17,9 +17,9 @@ public class AutoClosableIsGood implements Closeable {
     @Override
     public void close() {
         try {
-            reader.close();
+            reader.close(); //IOException이 발생 
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException(e); //IOException을 RuntimeException 계열로 변환
         }
     }
 }

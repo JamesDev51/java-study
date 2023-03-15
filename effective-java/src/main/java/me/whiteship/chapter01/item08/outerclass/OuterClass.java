@@ -11,6 +11,7 @@ public class OuterClass {
     class InnerClass {
 
         public void hello() {
+            //inner 클래스에서 outer 클래스를 참조하는 방법 -> 참조가 생기게 되서 gc 에서 처리 문제 생김
             OuterClass.this.hi();
         }
 

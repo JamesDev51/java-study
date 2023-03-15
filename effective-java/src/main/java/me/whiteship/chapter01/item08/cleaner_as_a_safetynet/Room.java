@@ -29,6 +29,9 @@ public class Room implements AutoCloseable {
 
     public Room(int numJunkPiles) {
         state = new State(numJunkPiles);
+
+        //Room 을 만들 때 cleaner 에 등록한 후 cleanble 을 받음
+        //gc가 될 때 cleaner queue 에  해당 cleanable 작업이 들어가게 됨
         cleanable = cleaner.register(this, state);
     }
 

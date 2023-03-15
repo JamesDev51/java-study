@@ -8,9 +8,9 @@ public class BrokenAccount extends Account {
         super(accountId);
     }
 
-    @Override
-    protected void finalize() throws Throwable {
-        this.transfer(BigDecimal.valueOf(100), "keesun");
-    }
+    // @Override
+    // protected void finalize() throws Throwable {
+    //     this.transfer(BigDecimal.valueOf(100), "keesun");
+    // }
 }
 

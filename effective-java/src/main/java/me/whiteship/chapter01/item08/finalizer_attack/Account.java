@@ -18,4 +18,9 @@ public class Account {
         System.out.printf("transfer %f from %s to %s\n", amount, accountId, to);
     }
 
+    //상속 못하도록 final 을 붙여서 finalize 공격을 막기
+    @Override
+    protected final void finalize() throws Throwable {
+        super.finalize();
+    }
 }
