@@ -12,6 +12,15 @@ public class TopLine {
         }
     }
 
+    static String badFirstLineOfFile(String path) throws IOException {
+        BufferedReader br = new BadBufferedReader(new FileReader(path));
+        try{
+            return br.readLine();
+        }finally {
+            br.close(); //여기서 발생한 예외가 readLine()에서 발생한 예외를 먹어버림 -> 디버깅 불가능
+        }
+    }
+
     public static void main(String[] args) throws IOException {
         System.out.println(firstLineOfFile("pom.xml"));
     }
