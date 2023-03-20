@@ -25,6 +25,8 @@ public class ColorPoint extends Point {
             return false;
 
         // o가 일반 Point면 색상을 무시하고 비교한다.
+        //point만 지원 -> 나중에 colorPoint와 같은 계층의 point 에서 똑같이 구현하면 stackOverFlow 가능
+
         if (!(o instanceof ColorPoint))
             return o.equals(this);
 

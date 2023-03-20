@@ -15,16 +15,16 @@ public class Point {
     }
 
     @Override public boolean equals(Object o) {
-        if (this == o) {
+        if (this == o) { //객체의 동일성을 확인 -> 반사성
             return true;
         }
 
-        if (!(o instanceof Point)) {
+        if (!(o instanceof Point)) { //타입 비교
             return false;
         }
 
-        Point p = (Point) o;
-        return p.x == x && p.y == y;
+        Point p = (Point) o; //기대한 타입으로  캐스팅
+        return p.x == x && p.y == y; //반드시 같아야 하는 값들을 비교
     }
 
     public static void main(String[] args) {

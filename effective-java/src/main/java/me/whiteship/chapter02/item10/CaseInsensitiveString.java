@@ -13,22 +13,23 @@ public final class CaseInsensitiveString {
     }
 
 //     대칭성 위배!
-    @Override public boolean equals(Object o) {
-        if (o instanceof CaseInsensitiveString)
-            return s.equalsIgnoreCase(
-                    ((CaseInsensitiveString) o).s);
-        if (o instanceof String)  // 한 방향으로만 작동한다!
-            return s.equalsIgnoreCase((String) o);
-        return false;
-    }
+//     @Override public boolean equals(Object o) {
+//         if (o instanceof CaseInsensitiveString)
+//             return s.equalsIgnoreCase(
+//                     ((CaseInsensitiveString) o).s); //자기 자신으로 캐스팅하고 비교
+//         if (o instanceof String)  // 한 방향으로만 작동한다!
+//             return s.equalsIgnoreCase((String) o); //String과 동급으로 사용하겠다 -> 대칭성 위배
+//         return false;
+//     }
 
     // 문제 시연 (55쪽)
     public static void main(String[] args) {
         CaseInsensitiveString cis = new CaseInsensitiveString("Polish");
-//        CaseInsensitiveString cis2 = new CaseInsensitiveString("polish");
+       CaseInsensitiveString cis2 = new CaseInsensitiveString("polish");
         String polish = "polish";
         System.out.println(cis.equals(polish));
-//        System.out.println(cis2.equals(cis));
+        System.out.println(polish.equals(cis)); //false -> 대칭성 위배
+       System.out.println(cis2.equals(cis)); //caseInsensitive 간의 equals -> true
 
         List<CaseInsensitiveString> list = new ArrayList<>();
         list.add(cis);
@@ -37,8 +38,8 @@ public final class CaseInsensitiveString {
     }
 
     // 수정한 equals 메서드 (56쪽)
-//    @Override public boolean equals(Object o) {
-//        return o instanceof CaseInsensitiveString &&
-//                ((CaseInsensitiveString) o).s.equalsIgnoreCase(s);
-//    }
+   // @Override public boolean equals(Object o) {
+   //     return o instanceof CaseInsensitiveString &&
+   //             ((CaseInsensitiveString) o).s.equalsIgnoreCase(s);
+   // }
 }
