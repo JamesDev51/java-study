@@ -5,7 +5,7 @@ import me.whiteship.chapter02.item10.Point;
 import java.util.*;
 
 // equals를 재정의하면 hashCode로 재정의해야 함을 보여준다. (70-71쪽)
-public final class PhoneNumber {
+public final class  PhoneNumber {
     private final short areaCode, prefix, lineNum;
 
     public PhoneNumber(int areaCode, int prefix, int lineNum) {
@@ -38,12 +38,14 @@ public final class PhoneNumber {
     // hashCode 없이는 제대로 동작하지 않는다. 다음 셋 중 하나를 활성화하자.
 
     // 코드 11-2 전형적인 hashCode 메서드 (70쪽)
-//    @Override public int hashCode() {
-//        int result = Short.hashCode(areaCode); // 1
-//        result = 800000 * result + Short.hashCode(prefix); // 2
-//        result = 800000 * result + Short.hashCode(lineNum); // 3
-//        return result;
-//    }
+   // @Override public int hashCode() {
+   //      //기본타입 -> WrapperType.hashCode() 사용
+   //     //참조타입 -> 그 자체의 hashCode() 사용
+   //     int result = Short.hashCode(areaCode); // 1
+   //     result = 800000 * result + Short.hashCode(prefix); // 2
+   //     result = 800000 * result + Short.hashCode(lineNum); // 3
+   //     return result;
+   // }
 
     // 코드 11-3 한 줄짜리 hashCode 메서드 - 성능이 살짝 아쉽다. (71쪽)
 //    @Override public int hashCode() {
