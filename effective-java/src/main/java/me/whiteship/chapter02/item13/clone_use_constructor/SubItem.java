@@ -6,7 +6,7 @@ public class SubItem extends Item implements Cloneable {
 
     @Override
     public SubItem clone() {
-        return (SubItem)super.clone();
+        return (SubItem)super.clone(); //상위 타입을 하위 타입으로 변환 불가능
     }
 
     public static void main(String[] args) {

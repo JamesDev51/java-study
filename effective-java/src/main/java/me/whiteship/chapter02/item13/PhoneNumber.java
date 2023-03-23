@@ -8,7 +8,7 @@ public final class PhoneNumber implements Cloneable {
     private final short areaCode, prefix, lineNum;
 
     public PhoneNumber(int areaCode, int prefix, int lineNum) {
-        this.areaCode = rangeCheck(areaCode, 999, "지역코드");
+        this.areaCode = rangeCheck(areaCode,  999, "지역코드");
         this.prefix   = rangeCheck(prefix,   999, "프리픽스");
         this.lineNum  = rangeCheck(lineNum, 9999, "가입자 번호");
         System.out.println("constructor is called");
@@ -25,14 +25,18 @@ public final class PhoneNumber implements Cloneable {
     }
 
     // 코드 13-1 가변 상태를 참조하지 않는 클래스용 clone 메서드 (79쪽)
+    //하위 타입으로 리턴하여 오버라이딩 가능 (인정함)
     @Override
     public PhoneNumber clone() {
         try {
             return (PhoneNumber) super.clone();
-        } catch (CloneNotSupportedException e) {
+        } catch (CloneNotSupportedException e) { //checkedException 쓰는게 큰 의미가 없는 경우
             throw new AssertionError();  // 일어날 수 없는 일이다.
         }
     }
+
+
+
 
     public static void main(String[] args) {
         PhoneNumber pn = new PhoneNumber(707, 867, 5309);

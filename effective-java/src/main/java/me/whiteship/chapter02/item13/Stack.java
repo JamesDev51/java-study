@@ -31,12 +31,12 @@ public class Stack implements Cloneable {
     // 코드 13-2 가변 상태를 참조하는 클래스용 clone 메서드
     // TODO stack -> elementsS[0, 1]
     // TODO copy -> elementsC[0, 1]
-    // TODO elementsS[0] == elementsC[0]
+    // TODO elementsS[0] == elementsC[0] -> 안의 인스턴스들은 shallow copy 됐음
 
     @Override public Stack clone() {
         try {
             Stack result = (Stack) super.clone();
-            result.elements = elements.clone();
+            result.elements = elements.clone(); //배열도 복사 해줘야 함
             return result;
         } catch (CloneNotSupportedException e) {
             throw new AssertionError();
