@@ -11,19 +11,19 @@ public class CompareToConvention {
         BigDecimal n4 = BigDecimal.valueOf(11231230);
 
         // p88, 반사성
-        System.out.println(n1.compareTo(n1));
+        System.out.println(n1.compareTo(n1)); // true
 
         // p88, 대칭성
-        System.out.println(n1.compareTo(n2));
-        System.out.println(n2.compareTo(n1));
+        System.out.println(n1.compareTo(n2)); //1
+        System.out.println(n2.compareTo(n1)); //-1
 
         // p89, 추이성
-        System.out.println(n3.compareTo(n1) > 0);
-        System.out.println(n1.compareTo(n2) > 0);
-        System.out.println(n3.compareTo(n2) > 0);
+        System.out.println(n3.compareTo(n1) > 0); //true
+        System.out.println(n1.compareTo(n2) > 0); //true
+        System.out.println(n3.compareTo(n2) > 0); //true
 
         // p89, 일관성
-        System.out.println(n4.compareTo(n2));
+        System.out.println(n4.compareTo(n2));  //
         System.out.println(n2.compareTo(n1));
         System.out.println(n4.compareTo(n1));
 
@@ -31,6 +31,6 @@ public class CompareToConvention {
         BigDecimal oneZero = new BigDecimal("1.0");
         BigDecimal oneZeroZero = new BigDecimal("1.00");
         System.out.println(oneZero.compareTo(oneZeroZero)); // Tree, TreeMap
-        System.out.println(oneZero.equals(oneZeroZero)); // 순서가 없는 콜렉션
+        System.out.println(oneZero.equals(oneZeroZero)); // 순서가 없는
     }
 }
