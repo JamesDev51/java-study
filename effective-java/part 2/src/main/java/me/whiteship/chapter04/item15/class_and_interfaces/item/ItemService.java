@@ -4,6 +4,8 @@ import me.whiteship.chapter04.item15.class_and_interfaces.member.MemberService;
 
 public class ItemService {
 
+    public static final String NAME = "minseok"; //변경되지 않는 상수
+
     private MemberService memberService;
 
     boolean onSale;

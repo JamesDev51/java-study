@@ -11,8 +11,8 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 @ExtendWith(MockitoExtension.class)
 class ItemServiceTest {
 
-    @Mock
-    MemberService memberService;
+    @Mock //가짜 객체를 만들어서  사용하는 방법
+    MemberService memberService; //DefaultMemberService 직접 참조할 수 없음
 
     @Test
     void itemService() {
