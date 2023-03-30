@@ -1,6 +1,8 @@
 package me.whiteship.chapter04.item16.point.field;
 
 public class Point {
+
+    //public class, public field -> 캡슐화 장점 사용 x
     public double x;
     public double y;
 

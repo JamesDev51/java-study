@@ -11,7 +11,7 @@ public class DimensionExample {
         button.setBounds(0, 0, 20, 10);
 
         Dimension size = button.getSize();
-        System.out.println(size.height);
+        System.out.println(size.height); //내부 필드가 노출되어 있는 문제
         System.out.println(size.width);
     }
 
