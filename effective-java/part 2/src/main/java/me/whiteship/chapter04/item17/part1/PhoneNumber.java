@@ -10,6 +10,9 @@ public final class PhoneNumber {
         this.lineNum = lineNum;
     }
 
+
+
+
     public short getAreaCode() {
         return areaCode;
     }

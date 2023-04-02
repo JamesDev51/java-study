@@ -17,6 +17,7 @@ public final class Complex {
     public double realPart()      { return re; }
     public double imaginaryPart() { return im; }
 
+    // 새로운 객체를 생성해서 반환해줌
     public Complex plus(Complex c) {
         return new Complex(re + c.re, im + c.im);
     }

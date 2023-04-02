@@ -8,6 +8,10 @@ public final class Person {
         this.address = address;
     }
 
+    /**
+     * 방어적인 복사를 사용하여 객체를 줌
+     * @return 복사된 address 객체
+     */
     public Address getAddress() {
         Address copyOfAddress = new Address();
         copyOfAddress.setStreet(address.getStreet());
@@ -22,7 +26,7 @@ public final class Person {
 
         Person person = new Person(seattle);
 
-        Address redmond = person.getAddress();
+        Address redmond = person.getAddress(); //접근 허용 x
         redmond.setCity("Redmond");
 
         System.out.println(person.address.getCity());
